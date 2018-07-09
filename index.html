@@ -24,16 +24,12 @@
     </div>
 
     <div slide>
-      <img src="images/image3.jpg" style="width:100%">
+      <img src="images/shark.jpeg" style="width:100%">
     </div>
 
     <div slide>
-      <img src="images/image3.jpg" style="width:100%">
+      <img src="images/dice.jpg" style="width:100%">
     </div>
-
-    <a slidePrev onclick="slider.plusSlides()">&#10094;</a>
-    <a slideNext onclick="slider.plusSlides()">&#10095;</a>
-
   </div>
 
   <button onclick="slider.pause()">pause</button>
@@ -41,9 +37,12 @@
   <button onclick="slider.setTransition('bounceIn')">transition bounce</button>
 
 
+  <script src="src/hammer.min.js"></script>
   <script src="src/slider.js"></script>
   <script>
-    let slider = new SpSlider('[slider]', {});
+    let slider = new SpSlider('[slider]', {
+      color: "red"
+    });
   </script>
 
 </body>
